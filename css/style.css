@@ -1,0 +1,90 @@
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: Arial;
+}
+.wrapper{
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax{
+    position: relative;
+    height: 100%;
+}
+.parallax-montain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax-montain-1{
+    background: url("../image/m_1.png") 0 0 / cover no-repeat;
+}
+.parallax-montain-2{
+    z-index: 1;
+    background: url("../image/m_2.png") bottom right / 45% no-repeat;
+}
+.parallax-montain-3{
+    z-index: 1;
+    background: url("../image/m_3.png") left bottom / 100% no-repeat;
+}
+.parallax-fog{
+    background: url("../image/fog_1.png")  bottom / 100% no-repeat;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.content{
+    position: relative;
+}
+.content-body{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.content-header{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.content-title{
+    font-size: 80px;
+    color: #e7d584;
+}
+.content-subtitle{
+    font-size: 35px;
+    margin-top: 15px;
+    color: rgba(212, 197, 127, 0.78);
+}
+.content-article{
+    text-align: justify;
+    color: #4c4c4c;
+    padding: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.36);
+    border-radius: 5px;
+}
+
+.content-article p{
+    margin-bottom: 20px;
+}
